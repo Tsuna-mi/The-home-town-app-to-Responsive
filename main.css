@@ -56,14 +56,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 600px) {
-  .header__inner {
-    align-items: baseline;
-  }
+  margin: 10px auto;
 }
 
 .header__logo {
@@ -72,10 +65,17 @@ ul {
 }
 
 .header__title {
+  width: 80%;
   font-weight: 300;
-  font-size: 4em;
-  margin: 0 0.25em;
+  font-size: 2.35em;
+  margin: 10px 0.25em;
   color: #212121;
+}
+
+.hamburger-icon {
+  font-size: 40px;
+  color: gray;
+  margin: -5px 5px;
 }
 
 
@@ -373,4 +373,11 @@ footer a {
   text-decoration: none;
   color: #333;
   padding: 1.5em;
+}
+
+
+@media (min-width: 520px) {
+  .header__inner {
+    align-items: baseline;
+  }
 }
